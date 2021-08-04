@@ -2,7 +2,7 @@ apiVersion: v2
 name: dex
 description: Dex component for Karavel
 type: application
-version: 0.1.0
+version: 0.1.0-SNAPSHOT
 appVersion: 2.27.0
 maintainers:
   - name: MatteoJoliveau
