@@ -71,6 +71,12 @@ rules:
   - apiGroups:
       - dex.karavel.io
     resources:
+      - dexclients/finalizers
+    verbs:
+      - update
+  - apiGroups:
+      - dex.karavel.io
+    resources:
       - dexclients/status
     verbs:
       - get
@@ -88,6 +94,12 @@ rules:
       - patch
       - update
       - watch
+  - apiGroups:
+      - dex.karavel.io
+    resources:
+      - dexes/finalizers
+    verbs:
+      - update
   - apiGroups:
       - dex.karavel.io
     resources:
@@ -147,8 +159,10 @@ metadata:
 rules:
   - apiGroups:
       - ""
+      - coordination.k8s.io
     resources:
       - configmaps
+      - leases
     verbs:
       - get
       - list
@@ -160,17 +174,10 @@ rules:
   - apiGroups:
       - ""
     resources:
-      - configmaps/status
-    verbs:
-      - get
-      - update
-      - patch
-  - apiGroups:
-      - ""
-    resources:
       - events
     verbs:
       - create
+      - patch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding

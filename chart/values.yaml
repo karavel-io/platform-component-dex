@@ -4,10 +4,17 @@ connectors:
     id: mock
     name: Example
 secret:
+  key:
+  store:
+    name: default
+    kind: ClusterSecretStore
 
 operator:
   image: quay.io/karavel/dex-operator
-  tag: latest
+  tag: main
 
+dex:
+  image: ghcr.io/dexidp/dex
+  tag:
 prometheus:
   enable: false

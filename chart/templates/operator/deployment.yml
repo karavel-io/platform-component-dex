@@ -25,8 +25,11 @@ spec:
           command:
             - /manager
           args:
-            - --enable-leader-election
-            - --metrics-addr=0.0.0.0:8080
+          - --health-probe-bind-address=:8081
+          - --metrics-bind-address=127.0.0.1:8080
+          - --leader-elect
+          - --dex-default-image
+          - {{ .Values.dex.image }}:{{ .Values.dex.tag | default (printf "v%s" .Chart.AppVersion) }}
           imagePullPolicy: {{ ternary "Always" "IfNotPresent" (eq .Values.operator.tag "latest") }}
           ports:
             - name: webhook-server

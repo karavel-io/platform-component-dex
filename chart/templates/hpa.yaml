@@ -12,15 +12,15 @@ spec:
     apiVersion: dex.karavel.io/v1alpha1
     kind: Dex
     name: {{ include "dex.name" . }}
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: 5
   metrics:
     - type: Resource
       resource:
         name: memory
-        targetAverageUtilization: 70
+        targetAverageUtilization: 80
     - type: Resource
       resource:
         name: cpu
-        targetAverageUtilization: 60
+        targetAverageUtilization: 70
 {{- end }}
