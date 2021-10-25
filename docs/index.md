@@ -2,7 +2,7 @@
 
 ![Component version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=component+version&query=$.entries.dex[0].version&url=https%3A%2F%2Frepository.platform.karavel.io%2Funstable%2Findex.yaml&style=for-the-badge)
 [![Dex version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=dex+version&query=$.entries.dex[0].appVersion&url=https%3A%2F%2Frepository.platform.karavel.io%2Funstable%2Findex.yaml&style=for-the-badge)](https://dexidp.io)
-[Documentation](https://docs.karavel.io/components/dex)
+[Documentation](https://platform.karavel.io/components/dex)
 
 ## Overview
 
