@@ -14,5 +14,6 @@ sources:
   - https://github.com/karavel-io/platform
 
 annotations:
+  karavel.io/bootstrap: 'true'
   karavel.io/dependencies: cert-manager, external-secrets
   prometheus.enable: prometheus
