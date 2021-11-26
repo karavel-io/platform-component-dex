@@ -10,7 +10,7 @@ secret:
     kind: ClusterSecretStore
 
 operator:
-  image: quay.io/karavel/dex-operator
+  image: ghcr.io/karavel-io/dex-operator
   tag: main
 
 dex:
