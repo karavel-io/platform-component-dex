@@ -8,7 +8,7 @@ This project follows the [SemVer 2.0] `MAJOR.MINOR.PATCH` format
 A minor release should introduce backward-compatible features and improvements. An end-user must be able to update from
 a minor release to the next (e.g. from `1.2.5` to `1.3.0`) without any manual intervention.
 
-To release a new minor version of this component, create a branch called `release/X.Y.0` (e.g. `release/1.3.0`) from `main`.
+To release a new minor version of this component, create a branch called `release/X.Y.0` (e.g. `release/1.4.0`) from `main`.
 This branch will host the last-minute changes and fixes in preparation for the actual release. Follow this release checklist:
 
 - [ ] Update the [CHANGELOG](CHANGELOG.md) by moving all `Unreleased` entries to a new section called `[X.Y.0] - YYYY-MM-DD`
